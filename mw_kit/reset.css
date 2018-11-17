@@ -1,0 +1,63 @@
+/*
+Project:  
+Author: Kirill Malahov
+Author URI: http://malahov-web.ru
+
+*/
+
+/*
+ * Содержание
+ *
+ *   1. Reset 
+*/ 
+
+/*
+ *  1. Reset 
+ **************************************************
+*/ 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* Reset form styles */
+INPUT:focus, TEXTAREA:focus, SELECT:focus   /* убирает стили хрома */ { outline : none; }
+A, A:active, A:focus, A::-moz-focus-inner,  INPUT::-moz-focus-inner, BUTTON::-moz-focus-inner  { border : none; outline : none; } /* убирает идиотскую рамку точками при зажатии */
+INPUT[type="submit"]:hover, BUTTON:hover { cursor : pointer; }
+
+INPUT, BUTTON, TEXTAREA
+{ margin : 0; padding : 0; border : none; }
+
+/* Placeholder style for browsers*/
+INPUT::-webkit-input-placeholder{ opacity : 1;} 
+INPUT::-moz-placeholder{ opacity : 1;} 
+INPUT::-ms-placeholder{ opacity : 1;} 
+TEXTAREA::-webkit-input-placeholder{ opacity : 1;} 
+TEXTAREA::-moz-placeholder{ opacity : 1;} 
+TEXTAREA::-ms-placeholder{ opacity : 1;} 
+/*----------*/
+/* Выделенный текст */
+*::-moz-selection, *::selection{ /* color: ; background: none repeat scroll 0% 0% #B3D4FC; text-shadow: none;*/ }
+

@@ -1,0 +1,144 @@
+
+/*
+ * Содержание
+ *
+ *   1. Reset
+ *   2. Main layouts ( general styles)
+ *   3. Header
+ *   4. Section section-main
+ *   5. Section section-whoneed
+ *   6. Section section-we_do
+ *   7. Section section-sample
+ *   8. Section section-price
+ *   9. Section section-you_get
+ *   10. Section section-license
+ *   11. Footer
+ *   12. Forms
+ *   A. Decor styles
+ *   B. Forms 
+ *   C. JS-classes
+ *   
+*/ 
+
+
+
+/*  1. Reset ? Normalize :
+ **************************************************
+ *
+*/ 
+
+
+/*
+ *  2. Main layouts 
+ **************************************************
+*/ 
+
+body{
+/*
+	font-family : "Proxima Nova"; font-weight : 300;
+ 	font-family : "Roboto"; font-weight : 300;
+	font-family : "PT Sans"; font-weight : 300;
+	font-family : "Lucida Sans Unicode"; font-weight : 300;
+	font-family : "Tahoma"; font-weight : 300;
+	font-family : "Open Sans"; font-weight : 300; 
+*/
+}
+
+
+/*
+ *  3. Header 
+ **************************************************
+*/ 
+
+.header{
+	//height : 120px;
+	background-color : #372;
+}
+.name{
+	margin : 50px 0;
+	width : 100%;
+	text-align : center;
+	color : #fff;
+	font-size : 24px;
+}
+.demo_block{
+	margin-bottom : 20px;
+	width : 100%;
+	height : 100px;
+	height : 60px;
+	background-color : #897;
+	line-height : 100px;
+	font-size : 1rem; line-height : 60px;
+	text-align : center;
+	color : #fff;
+}
+.row-table .demo_block{
+	background-color : #789;
+	height : auto;
+}
+.demo_inline_block{
+	margin-bottom : 20px;
+	width : 100%;
+	height : auto;
+	padding : 10px; box-sizing : border-box;
+	background-color : #987;
+	font-size : 1rem; line-height : 1.5rem;
+	color : #e9e8e7;
+}
+.demo_flex_block{
+	margin-bottom : 20px;
+	width : 100%;
+	height : auto; height : 100%; position : relative;
+	padding : 10px; box-sizing : border-box;
+	background-color : #979;
+	font-size : 1rem; line-height : 1.5rem;
+	color: #e9e7e9;
+}
+.row-flexbox>div{
+	//background-color : #979;
+}
+	
+.ds_auto{
+	width : auto;
+}
+.ds_300{
+	width : 300px;
+}
+.ds_200{
+	width : 200px;
+}
+
+
+
+
+
+/* */
+.accordeon-mobile-outer{
+	margin-top : 3em;
+}
+.accordeon-mobile{
+	
+}
+	.accordeon-mobile__item{
+		margin-bottom : 1.5em;
+		//padding-bottom : 1.5em;
+		
+	}
+		.accordeon-mobile__item-title{
+			font-weight : bold;
+			cursor : pointer;
+		}
+		.accordeon-mobile__item-title:hover{
+			color : #337722;
+		}		
+		.accordeon-mobile__item-content{
+			
+		}
+
+
+
+
+
+
+
+

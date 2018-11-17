@@ -1,0 +1,42 @@
+
+/* 3. Text */
+
+/* 3.1 - Адаптивное выравнивание текста */
+
+.lefted{ text-align : left; }
+.righted{ text-align : right; }
+.centered{ text-align : center; }
+.justifyed{ text-align : center; }
+
+.mv_lefted{ text-align : left; }
+.mv_righted{ text-align : right; }
+.mv_centered{ text-align : center; }
+
+@media  (min-width : 480px ){ 
+.mh_lefted{ text-align : left; }
+.mh_righted{ text-align : right; }
+.mh_centered{ text-align : center; }
+.mh_justifyed{ text-align : center; }
+}
+@media  (min-width : 768px ){ 
+.tb_lefted{ text-align : left; }
+.tb_righted{ text-align : right; }
+.tb_centered{ text-align : center; }
+.tb_justifyed{ text-align : center; }
+}
+@media  (min-width : 1024px ){ 
+.ds_lefted{ text-align : left; }
+.ds_righted{ text-align : right; }
+.ds_centered{ text-align : center; }
+.ds_justifyed{ text-align : center; }
+
+}
+@media  (min-width : 1366px ){ 
+.hd_lefted{ text-align : left; }
+.hd_righted{ text-align : right; }
+.hd_centered{ text-align : center; }
+.hd_justifyed{ text-align : center; }
+}
+
+/* 3.2 */
+

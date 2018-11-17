@@ -1,0 +1,145 @@
+/*  B. Forms
+ **************************************************
+ *
+*/
+
+/*
+ *  Forms 
+*/
+.overlay{ 
+	display : none; z-index : 1000; left : 0; top : 0; z-index : 11000;
+	position : fixed; width : 100%; height : 100%;
+	background: rgba(0, 0, 0, 0.9) none repeat scroll 0% 0%;
+}
+
+.container-form{
+	position : relative; height : 100%; padding-left : 0;  padding-right : 0;
+}
+
+.form{
+	margin : 0 auto;  padding : 1rem 0.5rem 1rem; box-sizing : border-box;
+/* 	background-color : #f8f8f8; border : 1px solid #ddd; */
+	text-align : left;  
+
+}
+/* .form__title{
+	padding-bottom : 1em;
+	font-size : 120%; font-style : italic; text-transform : uppercase; text-align : center;
+} */
+.field{
+	position : relative; float : left; margin-top : 0.5rem; margin-bottom : 0.5rem;
+
+}
+.field>*,
+.field input, .field textarea, .field button {
+	width : 100%; box-sizing : border-box;
+}
+span.wpcf7-form-control-wrap{
+	display : block;
+}
+.form input[type=text],
+.wpcf7-form input.wpcf7-text{
+/* margin : 0 0.5rem; */
+	padding : 0.3em 1em; 
+	background : rgba(255, 255, 255, 1);
+	border : 1px solid #ddd;
+	font-size : 1rem; line-height : 1.5rem; font-weight : 300; font-family : "Roboto", Arial, sans-serif;
+	color: #939393; 
+}
+/* .form textarea{
+	padding : 0.5em 1em;
+	background : rgba(255, 255, 255, 1);
+	border : 1px solid #ddd;
+	font-size : 16px; font-family : Arial, Tahoma, sans-serif;  
+	color: #939393;
+	resize : vertical; min-height : 2.5em; max-height : 14em;
+} */
+
+.form input[type=text]:focus,
+.form textarea:focus,
+.wpcf7-form input.wpcf7-text:focus,
+.wpcf7-form textarea:focus{
+	background : #fff; border : 1px solid #009746;
+	color: #404040;
+}
+
+form input::-webkit-input-placeholder{ //opacity : 0.75; color : #939393; } 	
+form input::-moz-placeholder{ //opacity : 0.75; color : #939393; } 	
+form input::-o-placeholder{ //opacity : 0.75; color : #939393; } 	
+form input::-ms-placeholder{ //opacity : 0.75; color : #939393; } 
+
+.form .button-send,
+.wpcf7-form .wpcf7-submit{
+	/* 	margin : 0 0.5rem; */ padding : 0.3em 0.5em;  box-sizing : border-box;
+	background-color : #009746;
+	font-size : 1.1rem; line-height : 1.5rem; font-family : "Roboto", Arial, sans-serif; text-transform : uppercase; 
+	color: #fff;
+	-webkit-text-shadow : 0 2px 4px rgba(0, 0, 0, 0.28);	-moz-text-shadow : 0 2px 4px rgba(0, 0, 0, 0.28);	text-shadow : 0 2px 4px rgba(0, 0, 0, 0.28);	
+}
+.form .button-send:hover,
+.wpcf7-form .wpcf7-submit:hover{
+	background-color : #fc0;
+}
+
+
+/* modal */
+.modal{
+  position : absolute; //top : 50%; margin-top : -130px; top : 40%;
+}
+.modal-form{ display : none; }
+.modal-thanks{ display : none; }
+.modal_close{
+	position : absolute; top : 1em; right : 1em; width : 1em; height : 1em; 	//background-color : #ddd;  z-index : 10002;
+}
+.modal_close:hover { cursor : pointer; }
+.modal_close:before{
+	position : absolute; content : ""; left : 0; top : 0; width : 100%; height : 1px; background-color : #999; 
+	transform : rotate(45deg); top : 50%;
+}
+.modal_close:after{
+	position : absolute; content : ""; left : 0; top : 0; width : 100%; height : 1px; background-color : #999; 
+	transform : rotate(-45deg); top : 50%;
+}
+.modal_close:hover:before { background-color : #0056A7; }
+.modal_close:hover:after { background-color : #0056A7; }
+
+.form{
+}
+.form-order{
+	float: left;
+	//display : none;
+	padding : 1.5em 1em 0.5em 1em;
+	background : #fff; border : 2px solid #009746 /*009746*/;
+	//color : #5c5c5c; text-align : center;  
+	box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.33); 
+}
+.form__title{
+	padding-bottom : 1em;
+	font-size : 20px; font-weight : bold; text-align : center; //letter-spacing : 0.04em; text-transform: uppercase;
+}
+
+
+/* Contact form 7 additional classes */
+/* валидация формы */
+span.wpcf7-not-valid-tip {
+	/* position: absolute;   bottom: 0; margin-bottom : -2em; */
+	font-size : 15px; 
+	
+position: absolute; padding : 0.25rem 0.5rem;
+top: 100%;
+background: rgba(255, 255, 255, 0.75) none repeat scroll 0% 0%;	
+}
+div.wpcf7-response-output {
+	/* position : absolute;	margin-top : 0;	background-color : #fff; */
+     position : relative; background-color : #fff; color : #070707; z-index : 3000;
+	 
+/* display: block; */
+font-size: 20px;
+position: absolute;
+top: -5rem;
+}
+
+div.wpcf7-response-output:hover{ cursor : pointer; opacity : 0.9; }
+.wpcf7-form input.wpcf7-not-valid{
+	border-color : rgba(255, 0, 0 , 0.5); color: rgba(255, 0, 0 , 1);
+}
